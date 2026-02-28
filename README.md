@@ -120,7 +120,9 @@ Default file creation permissions:
 ## 5. Required BSS/Data Variables
 
 The macros reference global labels by name. Your program must declare them in
-.data or .bss. The template already provides these; do not rename them.
+.data or .bss. The template already provides these; do not rename them. You can
+only rename the string reffering to the output file to fulfill the exercise requirment
+(for example 'out.txt' -> 'out1.txt' for exercise 1, 'out5.txt' for exercise 5 etc)
 
     section .data
         space       db ' '
