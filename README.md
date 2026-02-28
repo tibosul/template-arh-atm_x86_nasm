@@ -42,9 +42,9 @@ On a 64-bit Debian/Ubuntu system:
 
 ## 2. Building and Running
 
-    nasm -f elf32 template.asm -o template.o
-    ld -m elf_i386 template.o -o template
-    ./template
+    nasm -f elf32 template.asm -o src.o
+    ld -m elf_i386 src.o -o src
+    ./src
 
 The program expects `in.txt` in the current directory and writes output to
 `out.txt`. If the input file cannot be opened the program exits with status 1.
